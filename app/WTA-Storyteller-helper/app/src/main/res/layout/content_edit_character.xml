@@ -273,23 +273,24 @@
         </LinearLayout>
 
         <Button
-            android:text="@string/saveCharacter"
+            android:text="@string/deleteCharacter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/healthBox"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:id="@+id/btnEditCharacter"
-            android:onClick="editCharacter" />
-
-        <Button
-            android:text="@string/deleteCharacter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btnEditCharacter"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
             android:id="@+id/btnDeleteCharacter"
             android:onClick="deleteCharacter" />
+
+        <Button
+        android:text="@string/backToScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDeleteCharacter"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btnBackScreen"
+        android:onClick="backHome" />
+
     </RelativeLayout>
 </ScrollView>

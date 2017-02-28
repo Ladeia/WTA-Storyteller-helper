@@ -25,6 +25,7 @@ public class EditCharacter extends AppCompatActivity {
     private TextView etWillpower;
     private TextView etHealth ;
     private int id;
+    private WTADatabase database;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,9 +43,9 @@ public class EditCharacter extends AppCompatActivity {
 
         id = Integer.parseInt(this.getIntent().getStringExtra("id"));
 
-        WTADatabase database = new WTADatabase(this);
+        database = new WTADatabase(this);
 
-        Cursor cursor = database.getCharacterByID(getBaseContext(),id);
+        Cursor cursor = database.getCharacterByID(getBaseContext(), id);
 
         etName.setText(cursor.getString(cursor.getColumnIndexOrThrow("NAME")));
         etAuspice.setText(cursor.getString(cursor.getColumnIndexOrThrow("AUSPICE")));
@@ -62,7 +63,6 @@ public class EditCharacter extends AppCompatActivity {
     }
 
     public void deleteCharacter(View view){
-        WTADatabase database = new WTADatabase(this);
         Context context = getBaseContext();
         try {
             database.deletCharacter(context, id);
@@ -76,4 +76,64 @@ public class EditCharacter extends AppCompatActivity {
         }
     }
 
+    public void ragePlus(View view) {
+        int rage = Integer.parseInt(etRage.getText().toString());
+        rage++;
+        etRage.setText(String.valueOf(rage));
+        database.updateRage(getBaseContext(), rage, id);
+    }
+
+    public void rageMinus(View view) {
+        int rage = Integer.parseInt(etRage.getText().toString());
+        rage--;
+        etRage.setText(String.valueOf(rage));
+        database.updateRage(getBaseContext(), rage, id);
+    }
+
+    public void gnosisPlus(View view) {
+        int gnosis = Integer.parseInt(etGnosis.getText().toString());
+        gnosis++;
+        etGnosis.setText(String.valueOf(gnosis));
+        database.updateGnosis(getBaseContext(), gnosis, id);
+    }
+
+    public void gnosisMinus(View view) {
+        int gnosis = Integer.parseInt(etGnosis.getText().toString());
+        gnosis--;
+        etGnosis.setText(String.valueOf(gnosis));
+        database.updateGnosis(getBaseContext(), gnosis, id);
+    }
+
+    public void willpowerPlus(View view) {
+        int willpower = Integer.parseInt(etWillpower.getText().toString());
+        willpower++;
+        etWillpower.setText(String.valueOf(willpower));
+        database.updateWillpower(getBaseContext(), willpower, id);
+    }
+
+    public void willpowerMinus(View view) {
+        int willpower = Integer.parseInt(etWillpower.getText().toString());
+        willpower--;
+        etWillpower.setText(String.valueOf(willpower));
+        database.updateWillpower(getBaseContext(), willpower, id);
+    }
+
+    public void healthPlus(View view) {
+        int health = Integer.parseInt(etHealth.getText().toString());
+        health++;
+        etHealth.setText(String.valueOf(health));
+        database.updateHealth(getBaseContext(), health, id);
+    }
+
+    public void healthMinus(View view) {
+        int health = Integer.parseInt(etHealth.getText().toString());
+        health--;
+        etHealth.setText(String.valueOf(health));
+        database.updateHealth(getBaseContext(), health, id);
+    }
+
+    public void backHome(View view) {
+        Intent intent = new Intent(EditCharacter.this, MainActivity.class);
+        startActivity(intent);
+    }
 }

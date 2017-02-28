@@ -20,4 +20,5 @@
     <string name="editCharacter">Edit character</string>
     <string name="characterSucessfullyDeleted">Character sucessfuly deleted!</string>
     <string name="errorDeletCharacter">Error in delete character.</string>
+    <string name="backToScreen">Back to main screen</string>
 </resources>

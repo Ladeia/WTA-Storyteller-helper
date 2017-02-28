@@ -1,5 +1,6 @@
 package com.antonioladeia.wta_storyteller_helper;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -98,6 +99,58 @@ public class WTADatabase extends SQLiteOpenHelper {
             db.close();
             throw new Exception(ex);
         }
+        db.close();
+    }
+
+    public void updateRage(Context context, int rage, int characterID) {
+        ContentValues values = new ContentValues();
+        WTADatabase database = new WTADatabase(context);
+        SQLiteDatabase db = database.getWritableDatabase();
+
+        String where = "_id =" + characterID;
+
+        values.put("RAGE", rage);
+
+        db.update(TABLE_NAME,values,where,null);
+        db.close();
+    }
+
+    public void updateGnosis(Context context, int gnosis, int characterID) {
+        ContentValues values = new ContentValues();
+        WTADatabase database = new WTADatabase(context);
+        SQLiteDatabase db = database.getWritableDatabase();
+
+        String where = "_id =" + characterID;
+
+        values.put("GNOSIS", gnosis);
+
+        db.update(TABLE_NAME,values,where,null);
+        db.close();
+    }
+
+    public void updateWillpower(Context context, int willpower, int characterID) {
+        ContentValues values = new ContentValues();
+        WTADatabase database = new WTADatabase(context);
+        SQLiteDatabase db = database.getWritableDatabase();
+
+        String where = "_id =" + characterID;
+
+        values.put("WILLPOWER", willpower);
+
+        db.update(TABLE_NAME,values,where,null);
+        db.close();
+    }
+
+    public void updateHealth(Context context, int health, int characterID) {
+        ContentValues values = new ContentValues();
+        WTADatabase database = new WTADatabase(context);
+        SQLiteDatabase db = database.getWritableDatabase();
+
+        String where = "_id =" + characterID;
+
+        values.put("HEALTH", health);
+
+        db.update(TABLE_NAME,values,where,null);
         db.close();
     }
 }
