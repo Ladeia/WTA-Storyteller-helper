@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">WTA Storyteller helper</string>
+    <string name="newcharacter">New character</string>
+    <string name="title_activity_create__character">Create_Character</string>
+    <string name="characterTribe">Tribe</string>
+    <string name="characterAuspice">Auspice</string>
+    <string name="characterBreed">Breed</string>
+    <string name="characterName">Name</string>
+    <string name="saveCharacter">Save character</string>
+    <string name="Rage">Rage</string>
+    <string name="Gnosis">Gnosis</string>
+    <string name="Willpower">Willpower</string>
+    <string name="Health">Health</string>
+    <string name="characterSaved">Character saved sucessfully!</string>
+    <string name="errorSaveCharacter">Error in saved character</string>
+    <string name="title_activity_edit_character">EditCharacter</string>
+    <string name="deleteCharacter">Delete character</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="editCharacter">Edit character</string>
+    <string name="characterSucessfullyDeleted">Character sucessfuly deleted!</string>
+    <string name="errorDeletCharacter">Error in delete character.</string>
+</resources>
