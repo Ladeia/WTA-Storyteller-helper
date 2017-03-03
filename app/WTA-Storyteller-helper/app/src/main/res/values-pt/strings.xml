@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">WTA Storyteller helper</string>
+    <string name="newcharacter">Novo personagem</string>
+    <string name="no_characters">Você ainda não adicionou nenhum personagem.</string>
+    <string name="title_activity_create__character">Criar personagem</string>
+    <string name="characterTribe">Raça</string>
+    <string name="characterAuspice">Auspício</string>
+    <string name="characterBreed">Espécie</string>
+    <string name="characterName">Nome</string>
+    <string name="saveCharacter">Salvar personagem</string>
+    <string name="Rage">Fúria</string>
+    <string name="Gnosis">Gnose</string>
+    <string name="Willpower">Força de vontade</string>
+    <string name="Health">Saúde</string>
+    <string name="characterSaved">Personagem salvo com sucesso!</string>
+    <string name="errorSaveCharacter">Desculpe! Não foi possível salvar o personagem.</string>
+    <string name="title_activity_edit_character">EditCharacter</string>
+    <string name="deleteCharacter">Excluir personagem</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="editCharacter">Editar personagem</string>
+    <string name="characterSucessfullyDeleted">Personagem excluído com sucesso!</string>
+    <string name="errorDeletCharacter">Desculpe! Não foi possível excluir o personagem.</string>
+    <string name="backToScreen">Voltar para a tela principal</string>
+</resources>

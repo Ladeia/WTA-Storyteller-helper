@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">WTA Storyteller helper</string>
     <string name="newcharacter">New character</string>
+    <string name="no_characters">You haven\'t added any characters yet.</string>
     <string name="title_activity_create__character">Create_Character</string>
     <string name="characterTribe">Tribe</string>
     <string name="characterAuspice">Auspice</string>
