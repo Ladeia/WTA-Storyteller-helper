@@ -12,7 +12,6 @@ import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 
 public class MainActivity extends ListActivity {
-
     private ListView lvCharacter ;
     private ArrayAdapter<String> listAdapter ;
 
@@ -45,24 +44,32 @@ public class MainActivity extends ListActivity {
 
         String[] fieldNames = new String[] {"_id", "NAME"};
         int[] idViews = new int[] {R.id.idCharacter, R.id.nameCharacter};
-
         SimpleCursorAdapter listAdapter = new SimpleCursorAdapter(context,
-                R.layout.character,cursor,fieldNames,idViews, 0);
+                R.layout.character, cursor, fieldNames, idViews, 0);
 
-        lvCharacter = (ListView) findViewById( android.R.id.list );
-        lvCharacter.setAdapter( listAdapter );
+        if (listAdapter.getCount() > 0) {
+            lvCharacter = (ListView) findViewById(android.R.id.list);
+            lvCharacter.setAdapter(listAdapter);
 
-        lvCharacter.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String codigo;
-                cursor.moveToPosition(position);
-                codigo = cursor.getString(cursor.getColumnIndexOrThrow("_id"));
-                Intent intent = new Intent(MainActivity.this, EditCharacter.class);
-                intent.putExtra("id", codigo);
-                startActivity(intent);
-                finish();
-            }
-        });
+            lvCharacter.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    String codigo;
+                    cursor.moveToPosition(position);
+                    codigo = cursor.getString(cursor.getColumnIndexOrThrow("_id"));
+                    Intent intent = new Intent(MainActivity.this, EditCharacter.class);
+                    intent.putExtra("id", codigo);
+                    startActivity(intent);
+                    finish();
+                }
+            });
+
+            findViewById(R.id.textViewNoItems).setVisibility(View.GONE);
+            lvCharacter.setVisibility(View.VISIBLE);
+        }
+        else{
+            findViewById(R.id.textViewNoItems).setVisibility(View.VISIBLE);
+            lvCharacter.setVisibility(View.GONE);
+        }
     }
 }
