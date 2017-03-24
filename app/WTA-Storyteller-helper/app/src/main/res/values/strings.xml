@@ -22,4 +22,6 @@
     <string name="characterSucessfullyDeleted">Character sucessfuly deleted!</string>
     <string name="errorDeletCharacter">Error in delete character.</string>
     <string name="backToScreen">Back to main screen</string>
+    <string name="about">About</string>
+    <string name="title_activity_about">About</string>
 </resources>
