@@ -19,7 +19,9 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:id="@+id/textView" />
+            android:id="@+id/textView"
+            android:textStyle="bold"
+            android:textSize="15sp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -29,7 +31,8 @@
             android:layout_below="@+id/textView"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:id="@+id/tvCharacterName" />
+            android:id="@+id/tvCharacterName"
+            android:textSize="15sp" />
 
         <TextView
             android:text="@string/characterBreed"
@@ -38,7 +41,9 @@
             android:layout_below="@+id/tvCharacterName"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:id="@+id/textView2" />
+            android:id="@+id/textView2"
+            android:textStyle="bold"
+            android:textSize="15sp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -48,7 +53,8 @@
             android:layout_below="@+id/textView2"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:id="@+id/tvCharacterBreed" />
+            android:id="@+id/tvCharacterBreed"
+            android:textSize="15sp" />
 
         <TextView
             android:text="@string/characterAuspice"
@@ -57,7 +63,9 @@
             android:layout_below="@+id/tvCharacterBreed"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:id="@+id/textView3" />
+            android:id="@+id/textView3"
+            android:textStyle="bold"
+            android:textSize="15sp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -67,7 +75,8 @@
             android:layout_below="@+id/textView3"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:id="@+id/tvCharacterAuspice" />
+            android:id="@+id/tvCharacterAuspice"
+            android:textSize="15sp" />
 
         <TextView
             android:text="@string/characterTribe"
@@ -76,7 +85,9 @@
             android:layout_below="@+id/tvCharacterAuspice"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:id="@+id/textView4" />
+            android:id="@+id/textView4"
+            android:textStyle="bold"
+            android:textSize="15sp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -87,7 +98,8 @@
             android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:id="@+id/tvCharacterTribe" />
+            android:id="@+id/tvCharacterTribe"
+            android:textSize="15sp" />
 
         <TextView
             android:text="@string/Rage"
@@ -96,7 +108,9 @@
             android:layout_below="@+id/tvCharacterTribe"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:id="@+id/tvRage" />
+            android:id="@+id/tvRage"
+            android:textStyle="bold"
+            android:textSize="15sp" />
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -123,7 +137,8 @@
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:id="@+id/tvCharacterRage" />
+                android:id="@+id/tvCharacterRage"
+                android:textSize="15sp" />
 
             <Button
                 android:text="@string/plus"
@@ -142,7 +157,9 @@
             android:layout_below="@+id/rageBox"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:id="@+id/tvGnosis" />
+            android:id="@+id/tvGnosis"
+            android:textStyle="bold"
+            android:textSize="15sp" />
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -169,7 +186,8 @@
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:id="@+id/tvCharacterGnosis" />
+                android:id="@+id/tvCharacterGnosis"
+                android:textSize="15sp" />
 
             <Button
                 android:text="@string/plus"
@@ -189,7 +207,9 @@
             android:layout_below="@+id/gnosisBox"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:id="@+id/tvWillpower" />
+            android:id="@+id/tvWillpower"
+            android:textStyle="bold"
+            android:textSize="15sp" />
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -215,7 +235,8 @@
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:id="@+id/tvCharacterWillpower" />
+                android:id="@+id/tvCharacterWillpower"
+                android:textSize="15sp" />
             <Button
                 android:text="@string/plus"
                 android:layout_width="wrap_content"
@@ -233,7 +254,9 @@
             android:layout_below="@+id/willpowerBox"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:id="@+id/tvHealth" />
+            android:id="@+id/tvHealth"
+            android:textStyle="bold"
+            android:textSize="15sp" />
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -259,7 +282,8 @@
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:id="@+id/tvCharacterHealth" />
+                android:id="@+id/tvCharacterHealth"
+                android:textSize="15sp"/>
             <Button
                 android:text="@string/plus"
                 android:layout_width="wrap_content"
