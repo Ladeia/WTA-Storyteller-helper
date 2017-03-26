@@ -31,6 +31,8 @@ public class EditCharacter extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_character);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         etName = (TextView) findViewById(R.id.tvCharacterName);
         etBreed = (TextView)findViewById((R.id.tvCharacterBreed));

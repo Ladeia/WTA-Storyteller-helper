@@ -24,5 +24,7 @@
     <string name="backToScreen">Back to main screen</string>
     <string name="about">About</string>
     <string name="title_activity_about">About</string>
-    <string name="aboutContent"></string>
+    <string name="aboutContent">This app was developed for Werewolf: The Apocalipse fãns, this content is fully free and just work to help game master.
+    Werewolf The Apocalipse is a trademark of CCP hf. All rights reserved.
+    This app is a free software, for more infos you can see  in the page project in github https://github.com/Ladeia/WTA-Storyteller-helper</string>
 </resources>
