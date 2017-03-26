@@ -272,7 +272,7 @@
 
         <Button
             android:text="@string/deleteCharacter"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/healthBox"
             android:layout_alignParentLeft="true"
@@ -282,7 +282,7 @@
 
         <Button
             android:text="@string/backToScreen"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/btnDeleteCharacter"
             android:layout_alignParentLeft="true"
