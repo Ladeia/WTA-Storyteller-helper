@@ -24,4 +24,5 @@
     <string name="backToScreen">Back to main screen</string>
     <string name="about">About</string>
     <string name="title_activity_about">About</string>
+    <string name="aboutContent"></string>
 </resources>

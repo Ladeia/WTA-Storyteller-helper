@@ -7,5 +7,12 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.antonioladeia.wta_storyteller_helper.About"
     tools:showIn="@layout/activity_about">
+    <TextView
+        android:id="@+id/tvAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/aboutContent"/>
 
 </android.support.constraint.ConstraintLayout>
