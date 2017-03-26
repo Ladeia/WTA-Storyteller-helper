@@ -28,6 +28,15 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnNewCharacter"
         android:onClick="createNewCharacter"
-        android:layout_alignParentBottom="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btnAbout" />
 
+    <Button
+        android:text="@string/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAbout"
+        android:onClick="about"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

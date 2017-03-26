@@ -22,4 +22,6 @@
     <string name="characterSucessfullyDeleted">Personagem excluído com sucesso!</string>
     <string name="errorDeletCharacter">Desculpe! Não foi possível excluir o personagem.</string>
     <string name="backToScreen">Voltar para a tela principal</string>
+    <string name="about">Sobre</string>
+
 </resources>

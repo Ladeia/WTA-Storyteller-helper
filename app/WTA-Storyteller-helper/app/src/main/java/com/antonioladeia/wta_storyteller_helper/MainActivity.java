@@ -37,6 +37,11 @@ public class MainActivity extends ListActivity {
         startActivity(it);
     }
 
+    public void about(View view){
+        Intent it = new Intent(MainActivity.this, About.class);
+        startActivity(it);
+    }
+
     public void getCharacters() throws Exception {
         WTADatabase database = new WTADatabase(this);
         Context context = getBaseContext();
